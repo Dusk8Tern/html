@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="联系野火创意：留一句现状、目标和预算区间，我们回一页方案。演示表单不会发送真实信息。">
+<title>联系 · 野火创意</title>
+<script>
+document.documentElement.classList.add('js');
+window.addEventListener('error',function(){document.documentElement.classList.remove('js')});
+window.setTimeout(function(){if(!window.__wfReady)document.documentElement.classList.remove('js')},2000);
+</script>
+<link rel="stylesheet" href="theme.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="wf-top">
+  <a class="wf-logo" href="index.html" aria-label="野火创意 首页">
+    <span class="wf-logo__mark" aria-hidden="true">野</span>
+    <span class="wf-logo__name">野火创意<i>WILDFIRE</i></span>
+  </a>
+  <button class="nav-toggle wf-menu" type="button" aria-expanded="false" aria-controls="site-nav">
+    <span class="wf-menu__txt" aria-hidden="true">菜单</span>
+    <span class="wf-menu__ico" aria-hidden="true"><i></i><i></i></span>
+    <span class="sr-only">打开菜单</span>
+  </button>
+</header>
+
+<nav class="wf-nav" id="site-nav" aria-label="主导航">
+  <div class="wf-nav__top"><span>INDEX 01—07 · WILDFIRE</span><span>hello@example.com · 000-0000-0000</span></div>
+  <ul class="wf-nav__list">
+        <li><a href="work.html"><span class="wf-nav__no">01</span><b>作品</b><i>WORK</i></a></li>
+        <li><a href="services.html"><span class="wf-nav__no">02</span><b>服务</b><i>SERVICES</i></a></li>
+        <li><a href="about.html"><span class="wf-nav__no">03</span><b>关于</b><i>ABOUT</i></a></li>
+        <li><a href="process.html"><span class="wf-nav__no">04</span><b>流程</b><i>PROCESS</i></a></li>
+        <li><a href="journal.html"><span class="wf-nav__no">05</span><b>观点</b><i>JOURNAL</i></a></li>
+        <li><a href="careers.html"><span class="wf-nav__no">06</span><b>招聘</b><i>CAREERS</i></a></li>
+        <li><a href="contact.html" aria-current="page"><span class="wf-nav__no">07</span><b>联系</b><i>CONTACT</i></a></li>
+  </ul>
+  <div class="wf-nav__bottom">
+    <div class="wf-nav__strip" aria-hidden="true"><span class="wf-nav__striptrack">品牌识别 ✳ 网站与产品 ✳ 内容与影像 ✳ 增长支持 ✳ 品牌识别 ✳ 网站与产品 ✳ 内容与影像 ✳ 增长支持 ✳ </span></div>
+    <p><span>独立创意热店 · 12 人 · 2019 年至今</span><span>演示站 · 联系方式为占位符</span><span>说个项目 → contact.html</span></p>
+  </div>
+</nav>
+
+
+<main id="main">
+
+<section data-reveal class="wf-lead wf-lead--ink">
+  <div class="wf-lead__meta"><span>CONTACT / 01</span><span>两个工作日内回复 · 不合适也会直说</span></div>
+  <h1 class="wf-lead__title wf-hello">HELLO<span>.</span></h1>
+  <p class="wf-lead__lede">不用写正式 brief。现状、目标、预算区间，三行字就够。这张表单是演示用的，不会发送任何信息。</p>
+</section>
+
+<section data-reveal class="wf-sec">
+  <div class="wf-contact">
+    <form class="wf-form" data-validate novalidate>
+      <div class="wf-form__row">
+        <div class="wf-field"><label for="name">01 / 称呼 <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" data-required required aria-required="true" aria-describedby="err-name" placeholder="怎么称呼你"><p class="wf-field__err" id="err-name" hidden></p></div>
+        <div class="wf-field"><label for="email">02 / 邮箱 <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" data-required required aria-required="true" aria-describedby="err-email" placeholder="name@company.com"><p class="wf-field__err" id="err-email" hidden></p></div>
+      </div>
+      <div class="wf-field wf-field--select"><label for="type">03 / 项目类型</label><select id="type" name="type"><option value="">请选择（可不填）</option><option>品牌识别</option><option>网站与产品</option><option>内容与影像</option><option>增长支持</option><option>还没想好</option></select></div>
+      <fieldset class="wf-field wf-fieldset">
+        <legend>04 / 预算区间</legend>
+        <div class="wf-chips">
+          <button class="wf-budget" type="button" data-budget="5 万以内" aria-pressed="false">5 万以内</button>
+          <button class="wf-budget" type="button" data-budget="5–15 万" aria-pressed="false">5–15 万</button>
+          <button class="wf-budget" type="button" data-budget="15–30 万" aria-pressed="false">15–30 万</button>
+          <button class="wf-budget" type="button" data-budget="30 万以上" aria-pressed="false">30 万以上</button>
+          <button class="wf-budget" type="button" data-budget="需要建议" aria-pressed="false">需要建议</button>
+        </div>
+      </fieldset>
+      <div class="wf-field"><label for="problem">05 / 想解决什么 <span aria-hidden="true">*</span></label><textarea id="problem" name="problem" data-required required aria-required="true" aria-describedby="err-problem" placeholder="一句话说清：现在是什么样、希望变成什么样、最急的是什么"></textarea><p class="wf-field__err" id="err-problem" hidden></p></div>
+      <input type="hidden" id="budget" name="budget" value="">
+      <div class="wf-actions" style="margin-top:0">
+        <button class="wf-submit magnetic" type="submit">提交（演示） <span aria-hidden="true">→</span></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </div>
+      <p class="wf-form__note">带 * 为必填。这是演示表单，不会发送任何信息，也不采集数据。</p>
+    </form>
+    <aside class="wf-aside">
+      <div class="wf-aside__box wf-aside__box--lime"><h2>直接联系</h2><p>邮箱：hello@example.com</p><p>电话：000-0000-0000</p><p>工作时间：周一至周五 10:00–18:00</p><p>办公方式：不受地域限制 · 全程线上（演示）</p></div>
+      <div class="wf-aside__box"><h2>接下来会发生什么</h2><ul><li><b>01</b><span>你发来需求，我们两个工作日内回复。</span></li><li><b>02</b><span>30 分钟通话，确认目标、范围与预算是否匹配。</span></li><li><b>03</b><span>给你一页方案：做什么、不做什么、周期与区间报价。</span></li></ul></div>
+      <div class="wf-aside__box wf-aside__box--dark"><h2>我们不接的</h2><ul><li><b>×</b><span>只比价的单</span></li><li><b>×</b><span>要求先出三版看看的单</span></li><li><b>×</b><span>没有明确决策人的单</span></li></ul><p style="margin-top:10px">不接急单。如果档期排不开，我们会直说，并推荐可能合适的人。</p></div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer class="wf-foot">
+  <div class="wf-foot__in">
+    <div class="wf-foot__row">
+      <span>野火创意 / WILDFIRE</span><span>12 人 · 2019 年至今</span><span>远程协作（演示）</span>
+      <a href="contact.html">hello@example.com</a><span>000-0000-0000</span><span>社交账号：占位</span>
+    </div>
+    <a class="wf-foot__word" href="index.html" aria-label="野火创意 首页">WILDFIRE</a>
+    <div class="wf-foot__base">
+      <p class="wf-demo">样板间演示站：品牌、人物、作品与证言均为虚构，仅用于展示版式；联系方式为占位符，不构成任何真实服务承诺。</p>
+      <p>© <span data-year>2026</span> 野火创意</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

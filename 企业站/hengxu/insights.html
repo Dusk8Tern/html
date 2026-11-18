@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="衡序工作笔记档案：指标不是越多越好、AI 场景评估先算不做的成本、数据团队的第一份路线图。三篇来自项目的判断记录。">
+<title>观点 · 工作笔记档案 · 衡序数据</title>
+<script>
+document.documentElement.classList.add('js');
+window.addEventListener('error',function(){document.documentElement.classList.remove('js')});
+window.setTimeout(function(){if(!window.__hxReady)document.documentElement.classList.remove('js')},2000);
+</script>
+<link rel="stylesheet" href="theme.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<div class="hx-rail" aria-label="站点导航">
+  <div class="hx-rail__top">
+    <a class="hx-brand" href="index.html" aria-label="衡序数据 首页">
+      <span class="hx-brand__cn">衡序数据</span>
+      <span class="hx-brand__en">HENGXU</span>
+      <span class="hx-brand__role">研究终端 / RESEARCH TERMINAL</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="hx-burger" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="sr-only">打开菜单</span>
+    </button>
+  </div>
+
+  <nav class="hx-nav" id="site-nav" aria-label="主导航">
+    <p class="hx-nav__lbl" aria-hidden="true">栏目索引 / INDEX</p>
+    <ul>
+      <li><a href="services.html"><span class="hx-nav__no">01</span><span>服务</span></a></li>
+      <li><a href="benchmarks.html"><span class="hx-nav__no">02</span><span>基准</span></a></li>
+      <li><a href="insights.html" aria-current="page"><span class="hx-nav__no">03</span><span>观点</span></a></li>
+      <li><a href="events.html"><span class="hx-nav__no">04</span><span>活动</span></a></li>
+      <li><a href="about.html"><span class="hx-nav__no">05</span><span>关于</span></a></li>
+      <li><a href="team.html"><span class="hx-nav__no">06</span><span>团队</span></a></li>
+      <li><a href="contact.html"><span class="hx-nav__no">07</span><span>联系</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="hx-rail__foot">
+    <div class="hx-basis">
+      <p class="hx-basis__lbl">综合指数 / 2026 Q4</p>
+      <p class="hx-basis__v" aria-label="综合指数 128.4，环比上升 2.1 点">128.4 <span>环比 +2.1</span></p>
+      <p class="hx-basis__d">2024 = 100 · 更新 2026-11-04<br>演示数据</p>
+    </div>
+    <a class="hx-basis__link" href="contact.html">预约简报 →</a>
+  </div>
+</div>
+
+<main id="main" class="hx-main">
+  <div class="hx-edition" aria-label="本期版本">
+    <span>第 12 期</span>
+    <span>2026 Q4</span>
+    <span>更新于 2026-11-04</span>
+    <span class="hx-edition__mark">研究终端</span>
+  </div>
+
+  <div class="hx-page">
+    <header class="hx-head">
+      <p class="hx-kicker">档案 03 / 工作笔记 · INSIGHTS</p>
+      <h1>工作笔记，<br>不是行业评论。</h1>
+      <p class="hx-head__lede">三篇都来自项目里的具体分歧。没有趋势判断，也不预测明年。</p>
+      <p class="hx-head__meta">2026-09 — 2026-11 · 3 篇 · 共约 18 分钟</p>
+    </header>
+
+    <!-- 档案表 -->
+    <section class="hx-sec" aria-labelledby="index-title" data-reveal>
+      <div class="hx-sec__head">
+        <span class="hx-sec__no">01</span>
+        <h2 class="hx-sec__title" id="index-title">档案表</h2>
+        <span class="hx-sec__meta">按日期倒序</span>
+      </div>
+
+      <div class="hx-scroll">
+        <table class="hx-table">
+          <caption>工作笔记索引 · 2026 年 · 演示目录</caption>
+          <thead>
+            <tr>
+              <th scope="col">日期</th>
+              <th scope="col">编号</th>
+              <th scope="col">标题</th>
+              <th scope="col">作者</th>
+              <th scope="col" class="hx-num">阅读时长</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="hx-num hx-num--l">2026-11</td><td class="hx-num hx-num--l">03</td><td class="hx-table__em"><a href="#post-3">数据团队的第一份路线图</a></td><td>陈</td><td class="hx-num">约 5 分钟</td></tr>
+            <tr><td class="hx-num hx-num--l">2026-10</td><td class="hx-num hx-num--l">02</td><td class="hx-table__em"><a href="#post-2">AI 场景评估先算「不做的成本」</a></td><td>周</td><td class="hx-num">约 7 分钟</td></tr>
+            <tr><td class="hx-num hx-num--l">2026-09</td><td class="hx-num hx-num--l">01</td><td class="hx-table__em"><a href="#post-1">指标不是越多越好</a></td><td>陈</td><td class="hx-num">约 6 分钟</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="hx-note">作者为演示占位；文章内容来自项目中的判断记录改写。</p>
+    </section>
+
+    <!-- 三篇摘要 -->
+    <section class="hx-sec" aria-labelledby="digest-title">
+      <div class="hx-sec__head">
+        <span class="hx-sec__no">02</span>
+        <h2 class="hx-sec__title" id="digest-title">三篇摘要</h2>
+        <span class="hx-sec__meta">原文约 18 分钟 · 摘要约 6 分钟</span>
+      </div>
+
+      <article class="hx-entry" id="post-1">
+        <div class="hx-entry__meta">
+          <span>2026-09</span>
+          <span>笔记 01 / METRICS</span>
+          <span>陈 · 研究负责人</span>
+          <span>约 6 分钟</span>
+        </div>
+        <h2>指标不是越多越好</h2>
+        <p>一个客户把 42 个指标放进了经营看板。三个月后我们做访谈，店长能说出来的只有三个：当日营业额、来客数、缺货率。其余 39 个，没人记得住，也没人用。</p>
+        <p>这不是看板做得不好，是选择没做。指标多，通常意味着三件事没想清楚：谁在看、看完做什么、做错了怎么发现。把这三个问题答完，指标数量往往会掉到个位数。我们现在的做法是：先写「这个指标会触发什么动作」，写不出来的不进首屏；一个指标只有一个负责人；每季度删一次指标，删不掉说明当初就不该加。</p>
+        <p>指标少，还有一个副作用：口径更容易统一。42 个指标时，光「活跃用户」就有四种算法；砍到 8 个之后，口径反而开得很快，因为大家都知道哪些不再重要了。</p>
+        <p class="hx-entry__pull">看板的价值不是「什么都能查到」，而是「每周一定会看的那五个问题，答案就在这里」。</p>
+      </article>
+
+      <article class="hx-entry" id="post-2">
+        <div class="hx-entry__meta">
+          <span>2026-10</span>
+          <span>笔记 02 / AI</span>
+          <span>周 · 数据科学负责人</span>
+          <span>约 7 分钟</span>
+        </div>
+        <h2>AI 场景评估先算「不做的成本」</h2>
+        <p>大多数评估从「模型能做什么」开始：能不能识别、能不能生成、准确率多少。这个顺序会让人越聊越兴奋，最后得出一个「技术上可行」的结论，却回答不了预算会上的问题：为什么是现在。</p>
+        <p>我们习惯先算另一笔账：如果这个场景继续由人来做，一年要花多少时间、犯多少错、卡在哪个环节。算完再谈模型，很多场景会自然排序——不是按技术难度，而是按「不做会疼多久」。结论只留三档：可以上线（数据够、流程清、错了能兜底）；暂缓（问题真实，但数据或责任边界没准备好）；不建议做（不做的成本很低，或错了代价不可控）。</p>
+        <p>三档里，「暂缓」最难写，也最有用。它要求你说清楚缺什么、谁来补、补到什么程度可以重启评估。没有这份清单，「暂缓」很快就会变成「永远不做」。</p>
+        <p class="hx-entry__pull">技术可行性不是决策依据。决策依据是：不做，业务会损失什么；做了，最坏会坏到哪里。</p>
+      </article>
+
+      <article class="hx-entry" id="post-3">
+        <div class="hx-entry__meta">
+          <span>2026-11</span>
+          <span>笔记 03 / ROADMAP</span>
+          <span>陈 · 研究负责人</span>
+          <span>约 5 分钟</span>
+        </div>
+        <h2>数据团队的第一份路线图</h2>
+        <p>新组建的数据团队，第一份路线图很容易写成平台清单：数据仓库、指标平台、BI、数据治理。东西都对，但业务侧看完只会问一句：那我下个月要的数，什么时候能有？</p>
+        <p>我们的写法反过来：先列「谁在等哪个数」，再标出这个数现在卡在哪——没采、没洗、口径不一致、还是没人看。把等待的人和时间写进去，路线图就有了优先级，而不只是技术栈。一页纸只放四块：等待方（部门、角色、用来做什么决定）、现状（卡点在哪）、动作（本季度能做完的三件事，每件有验收口径）、不做（明确本季度不碰什么）。</p>
+        <p>「不做」那一栏最容易被省略，但它决定了路线图能不能执行。数据团队的通病不是没想法，而是同时开了太多口子，最后一个都没收尾。</p>
+        <p class="hx-entry__pull">路线图不是给老板看的决心书，是给团队看的排期表。写不出「不做什么」，就排不出「先做什么」。</p>
+      </article>
+    </section>
+  </div>
+</main>
+
+<footer class="hx-colophon">
+  <div class="hx-colophon__grid">
+    <div>
+      <p class="hx-colophon__mast">衡序数据</p>
+      <p class="hx-colophon__sub">HENGXU · 研究终端 · 第 12 期</p>
+      <p class="hx-colophon__pos">让数据与 AI 的决策，有同行可对照。数据战略、指标看板、AI 场景评估与团队能力建设。</p>
+    </div>
+    <div>
+      <h2>索引 / INDEX</h2>
+      <ul class="hx-colophon__links">
+        <li><a href="services.html">01 服务</a></li>
+        <li><a href="benchmarks.html">02 基准</a></li>
+        <li><a href="insights.html">03 观点</a></li>
+        <li><a href="events.html">04 活动</a></li>
+        <li><a href="about.html">05 关于</a></li>
+        <li><a href="team.html">06 团队</a></li>
+        <li><a href="contact.html">07 联系</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>版本 / COLOPHON</h2>
+      <div class="hx-colophon__meta">
+        <p>版本 v3.0 · 更新 2026-11-04</p>
+        <p>第 12 期 · 2026 Q4 · 24 人研究团队</p>
+        <p>© <span data-year>2026</span> 衡序数据</p>
+        <p class="hx-colophon__demo">样板间演示站：品牌、人物、行业数据与活动均为虚构，仅用于展示版式；联系方式为占位符（hello@example.com · 000-0000-0000）。</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

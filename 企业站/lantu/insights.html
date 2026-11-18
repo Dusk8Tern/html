@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="澜图设计的工作笔记变更记录：大屏不是把报表放大、设计系统先解决命名、联调阶段才发现的 5 个界面问题。三篇文档式文章。">
+<title>观点变更记录 · 澜图设计 LANTU</title>
+<script>
+document.documentElement.classList.add('js');
+window.addEventListener('error',function(){document.documentElement.classList.remove('js')});
+window.setTimeout(function(){if(!window.__ltReady)document.documentElement.classList.remove('js')},2000);
+</script>
+<link rel="stylesheet" href="theme.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="lt-progress" aria-hidden="true"><i data-progress></i></div>
+
+<header class="lt-top">
+  <div class="lt-top__in">
+    <a class="lt-logo" href="index.html" aria-label="澜图设计 首页">
+      <b aria-hidden="true">澜</b>
+      <span>澜图设计<small>LANTU</small></span>
+    </a>
+    <span class="lt-ver">v2.4</span>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="lt-nav-toggle__bars" aria-hidden="true"></span><span class="sr-only">打开菜单</span>
+    </button>
+    <nav class="lt-nav" id="site-nav" aria-label="主导航">
+      <ul>
+        <li><a href="services.html">服务</a></li>
+        <li><a href="solutions.html">方案</a></li>
+        <li><a href="cases.html">案例</a></li>
+        <li><a href="process.html">流程</a></li>
+        <li><a href="about.html">关于</a></li>
+        <li><a href="insights.html" aria-current="page">观点</a></li>
+        <li><a href="contact.html">联系</a></li>
+      </ul>
+    </nav>
+    <a class="lt-top__ask" href="contact.html">预约诊断 <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<main id="main">
+<div class="lt-wrap">
+  <div class="lt-layout">
+
+    <details class="lt-toc-m">
+      <summary>本页目录 · LT-07</summary>
+      <ol>
+        <li><a href="#archive" class="is-current" aria-current="true"><span class="lt-toc__no">00</span>变更记录</a></li>
+        <li><a href="#post-1"><span class="lt-toc__no">01</span>大屏不是把报表放大</a></li>
+        <li><a href="#post-2"><span class="lt-toc__no">02</span>设计系统先解决命名</a></li>
+        <li><a href="#post-3"><span class="lt-toc__no">03</span>联调才发现的 5 个问题</a></li>
+      </ol>
+    </details>
+
+    <div class="lt-doc">
+
+      <header class="lt-sheet">
+        <div class="lt-sheet__no"><span>LT-07</span><span>观点</span></div>
+        <div class="lt-sheet__body">
+          <p class="lt-meta">图号 LT-07 / 比例 1:1 / 日期 2026-11 / 版本 2.4</p>
+          <h1>工作笔记，<br>写给做系统的人。</h1>
+          <p class="lt-lede">三篇，都是项目里反复遇到的问题。不写趋势，不写预测，只写我们怎么判断、怎么改。按文档变更记录排列，版本号与主页 changelog 对应。</p>
+        </div>
+      </header>
+
+      <section class="lt-sec-head" id="archive">
+        <span class="lt-sec-no">00</span>
+        <div class="lt-sec-body">
+          <h2>表 07-00 · 变更记录</h2>
+          <p>按版本倒序；日期为发布月份。</p>
+        </div>
+      </section>
+
+      <div class="lt-scroll">
+        <table class="lt-table">
+          <caption>表 07-00 · 文档变更记录</caption>
+          <thead>
+            <tr><th scope="col">编号</th><th scope="col">版本</th><th scope="col">日期</th><th scope="col">标题</th><th scope="col">类别</th><th scope="col">阅读</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="lt-num">07-01</td><td class="lt-num">v2.4.3</td><td class="lt-num">2026.08</td><td><a href="#post-1">大屏不是把报表放大</a></td><td>数据可视化</td><td class="lt-num">约 6 分钟</td></tr>
+            <tr><td class="lt-num">07-02</td><td class="lt-num">v2.4.2</td><td class="lt-num">2026.05</td><td><a href="#post-2">设计系统先解决命名</a></td><td>设计系统</td><td class="lt-num">约 5 分钟</td></tr>
+            <tr><td class="lt-num">07-03</td><td class="lt-num">v2.4.1</td><td class="lt-num">2026.02</td><td><a href="#post-3">联调阶段才发现的 5 个界面问题</a></td><td>联调</td><td class="lt-num">约 7 分钟</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <article class="lt-article" data-reveal id="post-1">
+        <div class="lt-article__side"><b>07-01</b>2026.08<br>数据可视化<br>约 6 分钟</div>
+        <div class="lt-article__body">
+          <h2>大屏不是把报表放大</h2>
+          <p>把一张 BI 报表投到大屏上，通常只能得到一张更贵的报表。字变大了，信息密度没变；坐在三米外的人，仍然找不到重点。</p>
+          <p>大屏与报表的第一个差别是观看距离。办公室里看报表约 40–60 厘米，指挥中心看大屏 3–8 米。距离翻十倍，视角里的字号要按比例放大，一屏能承载的条目却要减少。</p>
+          <p>第二个差别是使用姿态。报表可以坐着慢慢筛；大屏前面通常站着一个正在处理事件的人，他只有几秒。界面的任务不是「提供全部数据」，而是「让他决定下一步做什么」。</p>
+
+          <figure>
+            <svg viewBox="0 0 560 170" role="img" aria-label="观看距离示意图：办公阅读约 0.5 米，指挥中心近端 3 米，远端 8 米；距离越远，字号越大，同屏条目越少。">
+              <rect x="0" y="0" width="560" height="170" fill="#FFFFFF"/>
+              <line x1="52" y1="128" x2="520" y2="128" stroke="#101418" stroke-width="1"/>
+              <line x1="90" y1="124" x2="90" y2="132" stroke="#101418"/>
+              <line x1="240" y1="124" x2="240" y2="132" stroke="#101418"/>
+              <line x1="360" y1="124" x2="360" y2="132" stroke="#101418"/>
+              <line x1="490" y1="124" x2="490" y2="132" stroke="#101418"/>
+              <text x="90" y="148" text-anchor="middle" font-family="monospace" font-size="10" fill="#5A6472">0.5 m</text>
+              <text x="240" y="148" text-anchor="middle" font-family="monospace" font-size="10" fill="#5A6472">3 m</text>
+              <text x="360" y="148" text-anchor="middle" font-family="monospace" font-size="10" fill="#5A6472">5 m</text>
+              <text x="490" y="148" text-anchor="middle" font-family="monospace" font-size="10" fill="#5A6472">8 m</text>
+              <rect x="74" y="52" width="32" height="64" fill="#D9DEE5"/>
+              <rect x="224" y="66" width="32" height="50" fill="#1F4FE0" opacity=".7"/>
+              <rect x="344" y="80" width="32" height="36" fill="#1F4FE0" opacity=".85"/>
+              <rect x="474" y="92" width="32" height="24" fill="#1F4FE0"/>
+              <text x="90" y="42" text-anchor="middle" font-family="monospace" font-size="10" fill="#5A6472">办公阅读</text>
+              <text x="240" y="56" text-anchor="middle" font-family="monospace" font-size="10" fill="#5A6472">近端</text>
+              <text x="360" y="70" text-anchor="middle" font-family="monospace" font-size="10" fill="#5A6472">中距</text>
+              <text x="490" y="82" text-anchor="middle" font-family="monospace" font-size="10" fill="#5A6472">远端</text>
+              <path d="M60 26 L60 112" stroke="#0E9F75" stroke-width="1" fill="none"/>
+              <path d="M56 30 L60 22 L64 30" stroke="#0E9F75" stroke-width="1" fill="none"/>
+              <text x="68" y="22" font-family="monospace" font-size="9" fill="#0E9F75">字号 ↑</text>
+              <path d="M520 112 L520 26" stroke="#C4811B" stroke-width="1" fill="none"/>
+              <path d="M516 104 L520 112 L524 104" stroke="#C4811B" stroke-width="1" fill="none"/>
+              <text x="512" y="22" text-anchor="end" font-family="monospace" font-size="9" fill="#C4811B">同屏条目 ↓</text>
+            </svg>
+            <figcaption>图 07-A · 观看距离与首屏承载（示意图，非实测数据）</figcaption>
+          </figure>
+
+          <h3>我们做大屏先问三个问题</h3>
+          <ul>
+            <li>谁在看：值班员、调度员，还是来参观的人？</li>
+            <li>站多远：3 米、5 米还是 10 米？现场有没有反光？</li>
+            <li>看完要做什么：打电话、派单、记录，还是只需要知道「正常」？</li>
+          </ul>
+          <p>三个问题答完，首屏放什么基本就定了。剩下的指标不是不重要，而是应该放到第二层，用点击或下钻进入。</p>
+
+          <h3>四条具体做法</h3>
+          <ul>
+            <li>首屏只放 4–6 个能触发动作的数，不放「全量概览」。</li>
+            <li>单位与时间范围写在数字旁边，不藏在筛选器里。</li>
+            <li>趋势用一条线讲一件事，不要把 12 条线叠在一张图上。</li>
+            <li>明细放第二层，并保证从汇总能追到明细的同一行。</li>
+          </ul>
+          <blockquote>一块大屏如果什么都有，看的人就什么都不敢信。</blockquote>
+          <p>这句话听起来像审美判断，其实是信息架构问题。没有层级的界面，会把判断成本全部推给站在屏幕前的那个人。</p>
+        </div>
+      </article>
+
+      <article class="lt-article" data-reveal id="post-2">
+        <div class="lt-article__side"><b>07-02</b>2026.05<br>设计系统<br>约 5 分钟</div>
+        <div class="lt-article__body">
+          <h2>设计系统先解决命名</h2>
+          <p>很多设计系统失败，不是因为组件不够多，而是因为没人找得到组件。同一个主按钮，在设计文件里叫「主按钮」，在代码里叫 <span class="lt-mono">PrimaryBtn</span>，在另一个页面又叫 <span class="lt-mono">btn-blue</span>。</p>
+          <p>命名混乱会带来三个可预期的后果：搜索不到，于是重复建；重复建之后，同一个交互有两种行为；前端映射只能靠猜，最后干脆各写各的。</p>
+
+          <h3>先定三件事</h3>
+          <ul>
+            <li>层级：这个组件属于基础、业务，还是一次性页面元素？</li>
+            <li>状态：默认、悬停、按下、禁用、加载、错误，哪些是组件必须内置的？</li>
+            <li>尺寸：有几种？每种对应什么场景？没有场景的尺寸先删掉。</li>
+          </ul>
+          <p>三件事定完，名字通常自然长成「类别-变体-状态-尺寸」，例如 <span class="lt-mono">btn-primary-hover-md</span>。它不优雅，但可搜索、可排序、可映射。</p>
+
+          <h3>四条命名原则</h3>
+          <ul>
+            <li>名字里不出现颜色。颜色会随主题变，名字不该跟着改。</li>
+            <li>名字里不出现具体业务。业务组件会被复用到别的业务。</li>
+            <li>状态单独命名，不要用「特殊按钮」这种模糊说法。</li>
+            <li>中文名与英文名一一对应，允许音译差异，不允许概念差异。</li>
+          </ul>
+          <blockquote>命名统一之后，组件数量通常会先增加，然后大幅减少。</blockquote>
+          <p>先增加，是因为过去被藏起来的重复项被看见了；后减少，是因为合并有了依据。这个过程通常要两三个月，急不来。</p>
+        </div>
+      </article>
+
+      <article class="lt-article" data-reveal id="post-3">
+        <div class="lt-article__side"><b>07-03</b>2026.02<br>联调<br>约 7 分钟</div>
+        <div class="lt-article__body">
+          <h2>联调阶段才发现的 5 个界面问题</h2>
+          <p>假数据永远很乖。真实数据会长、会空、会重复，也会在凌晨三点变成 <span class="lt-mono">null</span>。以下五个问题，几乎每个项目都会遇到，只是早晚。</p>
+
+          <h3>01 长文本</h3>
+          <p>设计稿里的公司名是「示例科技」，真实名称可能是「某某省某某市第三建设集团有限责任公司」。长度差三倍，表格就会折行或截断。折行规则、截断位置、悬停是否显示全称，必须写进规范，不能留给前端临时决定。</p>
+
+          <h3>02 空数据</h3>
+          <p>0 和「没有数据」是两件事。0 是一个有效值，没有数据可能是设备离线，也可能是查询区间不对。图表要能区分这两种情况，空态要写清原因与下一步动作。</p>
+
+          <h3>03 无权限</h3>
+          <p>无权限页面不是一张空白页。用户需要知道：为什么看不到、缺哪个权限、找谁申请。把这三句话写出来，能减少大量支持工单。</p>
+
+          <h3>04 极端值</h3>
+          <p>一个 9999 的错误值，会把整条折线压成一条平线。常见处理是对数轴、截断标记或单独标注，但选哪种要业务确认。默认「自动缩放」最危险，因为它会把异常藏起来。</p>
+
+          <h3>05 刷新</h3>
+          <p>轮询刷新时，如果整个页面重渲染，正在输入的筛选框会被重置。数据和界面要分开：只更新数据区域，保留用户的输入与滚动位置。这个问题在演示时几乎不会出现，在真实值班场景里每天都会出现。</p>
+
+          <blockquote>联调不是「检查前端有没有还原设计稿」，而是一起找真实数据下的问题。</blockquote>
+          <p>所以我们把联调写进合同范围，而不是作为可选的「技术支持」。设计稿交付只是中点，不是终点。</p>
+        </div>
+      </article>
+
+      <p class="lt-note">以上为方法笔记，案例与数据均为演示性质；不构成对具体项目效果的承诺。图 07-A 为示意，不代表实测结论。</p>
+
+    </div>
+
+    <aside class="lt-toc" aria-label="本页目录">
+      <p class="lt-toc__title">本页目录</p>
+      <ol>
+        <li><a href="#archive" class="is-current" aria-current="true"><span class="lt-toc__no">00</span>变更记录</a></li>
+        <li><a href="#post-1"><span class="lt-toc__no">01</span>大屏不是把报表放大</a></li>
+        <li><a href="#post-2"><span class="lt-toc__no">02</span>设计系统先解决命名</a></li>
+        <li><a href="#post-3"><span class="lt-toc__no">03</span>联调才发现的 5 个问题</a></li>
+      </ol>
+      <p class="lt-toc__note">LT-07 / v2.4<br>更新 2026-11-05</p>
+    </aside>
+
+  </div>
+</div>
+</main>
+
+<footer class="lt-colophon">
+  <div class="lt-colophon__in">
+    <p class="lt-colophon__row">
+      <span><b>LANTU / 澜图设计</b> · v2.4</span>
+      <span>更新 2026-11-05</span>
+      <span>字体 PingFang SC / 系统等宽</span>
+      <span>色板 12 色 + 深蓝图版 5 色 · 首页表 05/05-A</span>
+    </p>
+    <p class="lt-colophon__row">
+      <span><a href="contact.html">hello@example.com</a> · 000-0000-0000</span>
+      <span>© <span data-year>2026</span> 澜图设计</span>
+      <span class="lt-colophon__demo">样板间演示站：品牌、人物、案例与界面均为虚构，仅用于展示版式；界面数字为演示数据，联系方式为占位符。</span>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

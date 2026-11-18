@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="澜图设计 LANTU 设计规范文档 v2.4：图 01 值班负荷总览、四类服务规格表、三张案例图版、五阶段周表、设计 Token 与观点变更记录。">
+<title>澜图设计 LANTU · 设计规范与图纸 v2.4</title>
+<script>
+document.documentElement.classList.add('js');
+window.addEventListener('error',function(){document.documentElement.classList.remove('js')});
+window.setTimeout(function(){if(!window.__ltReady)document.documentElement.classList.remove('js')},2000);
+</script>
+<link rel="stylesheet" href="theme.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="lt-progress" aria-hidden="true"><i data-progress></i></div>
+
+<header class="lt-top">
+  <div class="lt-top__in">
+    <a class="lt-logo" href="index.html" aria-label="澜图设计 首页">
+      <b aria-hidden="true">澜</b>
+      <span>澜图设计<small>LANTU</small></span>
+    </a>
+    <span class="lt-ver">v2.4</span>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="lt-nav-toggle__bars" aria-hidden="true"></span><span class="sr-only">打开菜单</span>
+    </button>
+    <nav class="lt-nav" id="site-nav" aria-label="主导航">
+      <ul>
+        <li><a href="services.html">服务</a></li>
+        <li><a href="solutions.html">方案</a></li>
+        <li><a href="cases.html">案例</a></li>
+        <li><a href="process.html">流程</a></li>
+        <li><a href="about.html">关于</a></li>
+        <li><a href="insights.html">观点</a></li>
+        <li><a href="contact.html">联系</a></li>
+      </ul>
+    </nav>
+    <a class="lt-top__ask" href="contact.html">预约诊断 <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<main id="main">
+<div class="lt-wrap">
+  <div class="lt-layout">
+
+    <details class="lt-toc-m">
+      <summary>本页目录 · LT-01</summary>
+      <ol>
+        <li><a href="#figure-01" class="is-current" aria-current="true"><span class="lt-toc__no">01</span>图 01 驾驶舱</a></li>
+        <li><a href="#directory"><span class="lt-toc__no">02</span>本页目录表</a></li>
+        <li><a href="#services"><span class="lt-toc__no">03</span>服务规格</a></li>
+        <li><a href="#plates"><span class="lt-toc__no">04</span>案例图版</a></li>
+        <li><a href="#schedule"><span class="lt-toc__no">05</span>五阶段周表</a></li>
+        <li><a href="#tokens"><span class="lt-toc__no">06</span>设计 Token</a></li>
+        <li><a href="#notes"><span class="lt-toc__no">07</span>观点变更记录</a></li>
+      </ol>
+    </details>
+
+    <div class="lt-doc">
+
+      <header class="lt-sheet">
+        <div class="lt-sheet__no"><span>LT-01</span><span>总图</span></div>
+        <div class="lt-sheet__body">
+          <p class="lt-meta">图号 LT-01 / 比例 1:1 / 日期 2026-11 / 版本 2.4</p>
+          <h1>把复杂系统，<br>画成一眼能懂。</h1>
+          <p class="lt-lede">澜图是一家 18 人的企业级 UI 与数据可视化设计工作室，2015 年成立。能源、制造、交通、医疗、金融、政务——我们把后台、看板和大屏，从「能跑」做到「能读」。这份页面本身就是一份设计规范：图号、表号、注释与验收口径都在原位。</p>
+        </div>
+      </header>
+
+      <table class="lt-table lt-table--def">
+        <caption>表 01 · 项目定义</caption>
+        <tbody>
+          <tr><th scope="row">项目</th><td>企业级 UI 与数据可视化设计（产品 UI / 数据大屏 / 设计系统 / 咨询）</td></tr>
+          <tr><th scope="row">对象</th><td>能源 · 制造 · 交通 · 医疗 · 金融 · 政务</td></tr>
+          <tr><th scope="row">交付</th><td>任务流、界面与状态、图表规范、组件库、前端联调</td></tr>
+          <tr><th scope="row">周期</th><td>2–10 周，按服务类型与系统范围确定</td></tr>
+        </tbody>
+      </table>
+
+      <section class="lt-sec-head" id="figure-01">
+        <span class="lt-sec-no">01</span>
+        <div class="lt-sec-body">
+          <h2>图 01 · 值班负荷总览</h2>
+          <p>三个读数、一条 24 小时折线、一个负荷率环。图表为单 tab 停靠，方向键逐点读数。</p>
+        </div>
+      </section>
+
+      <figure class="lt-fig" data-reveal>
+        <div class="lt-fig__head">
+          <span class="lt-fig__no">图 01 / LT-01-A</span>
+          <span>仪表 · 总览</span>
+          <span class="lt-fig__meta">比例 1:1 · 演示数据</span>
+        </div>
+        <div class="lt-fig__frame">
+          <span class="lt-tick lt-tick--tl" aria-hidden="true"></span>
+          <span class="lt-tick lt-tick--tr" aria-hidden="true"></span>
+          <span class="lt-tick lt-tick--bl" aria-hidden="true"></span>
+          <span class="lt-tick lt-tick--br" aria-hidden="true"></span>
+
+          <div class="lt-dash" data-dash aria-label="园区能源管理驾驶舱界面示例，数据为演示数据">
+            <div class="dash__bar">
+              <span class="dash__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <b>园区能源管理 · 总览</b>
+              <span class="dash__live">DEMO</span>
+            </div>
+
+            <div class="dash__kpis">
+              <div class="dash__kpi"><span>今日负荷</span><b>4.82</b><i>MW</i><em>+3.1% 环比</em></div>
+              <div class="dash__kpi"><span>峰值</span><b>5.24</b><i>MW</i><em>14:20</em></div>
+              <div class="dash__kpi"><span>在线设备</span><b>128</b><i>/132</i><em>4 台离线</em></div>
+            </div>
+
+            <div class="dash__chart" tabindex="0" role="group" aria-label="负荷折线图。按左右方向键逐点查看各时点负荷，Home 与 End 跳到首尾，按 Esc 关闭提示。">
+              <svg viewBox="0 0 520 200" role="img" aria-label="24 小时负荷折线：凌晨约 3.1 兆瓦，上午升至 4.6，14 点前后达到 5.2 的峰值，24 点回落到 3.2。演示数据。">
+                <defs>
+                  <linearGradient id="ltDashGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#0E9F75" stop-opacity=".26"/>
+                    <stop offset="1" stop-color="#0E9F75" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <line class="dash__grid" x1="45" y1="44" x2="500" y2="44"/>
+                <line class="dash__grid" x1="45" y1="91" x2="500" y2="91"/>
+                <line class="dash__grid" x1="45" y1="137" x2="500" y2="137"/>
+                <text class="dash__axis" x="4" y="47">5.0</text>
+                <text class="dash__axis" x="4" y="94">4.0</text>
+                <text class="dash__axis" x="4" y="140">3.0</text>
+                <path class="dash__area" d="M45 132.1 L82.9 146.1 L120.8 118.2 L158.8 81.1 L196.7 62.5 L234.6 85.7 L272.5 48.6 L310.4 34.6 L348.3 57.9 L386.3 76.4 L424.2 99.6 L462.1 122.9 L500 127.5 L500 160 L45 160 Z"/>
+                <path class="dash__line-glow" d="M45 132.1 L82.9 146.1 L120.8 118.2 L158.8 81.1 L196.7 62.5 L234.6 85.7 L272.5 48.6 L310.4 34.6 L348.3 57.9 L386.3 76.4 L424.2 99.6 L462.1 122.9 L500 127.5"/>
+                <path class="dash__line" d="M45 132.1 L82.9 146.1 L120.8 118.2 L158.8 81.1 L196.7 62.5 L234.6 85.7 L272.5 48.6 L310.4 34.6 L348.3 57.9 L386.3 76.4 L424.2 99.6 L462.1 122.9 L500 127.5"/>
+                <circle class="dash__pt" cx="45" cy="132.1" r="3.2" data-t="00:00" data-v="3.1" aria-label="00:00，负荷 3.1 兆瓦"><title>00:00 · 3.1 MW</title></circle>
+                <circle class="dash__pt" cx="82.9" cy="146.1" r="3.2" data-t="02:00" data-v="2.8" aria-label="02:00，负荷 2.8 兆瓦"><title>02:00 · 2.8 MW</title></circle>
+                <circle class="dash__pt" cx="120.8" cy="118.2" r="3.2" data-t="04:00" data-v="3.4" aria-label="04:00，负荷 3.4 兆瓦"><title>04:00 · 3.4 MW</title></circle>
+                <circle class="dash__pt" cx="158.8" cy="81.1" r="3.2" data-t="06:00" data-v="4.2" aria-label="06:00，负荷 4.2 兆瓦"><title>06:00 · 4.2 MW</title></circle>
+                <circle class="dash__pt" cx="196.7" cy="62.5" r="3.2" data-t="08:00" data-v="4.6" aria-label="08:00，负荷 4.6 兆瓦"><title>08:00 · 4.6 MW</title></circle>
+                <circle class="dash__pt" cx="234.6" cy="85.7" r="3.2" data-t="10:00" data-v="4.1" aria-label="10:00，负荷 4.1 兆瓦"><title>10:00 · 4.1 MW</title></circle>
+                <circle class="dash__pt" cx="272.5" cy="48.6" r="3.2" data-t="12:00" data-v="4.9" aria-label="12:00，负荷 4.9 兆瓦"><title>12:00 · 4.9 MW</title></circle>
+                <circle class="dash__pt" cx="310.4" cy="34.6" r="3.2" data-t="14:00" data-v="5.2" aria-label="14:00，负荷 5.2 兆瓦，当日峰值"><title>14:00 · 5.2 MW</title></circle>
+                <circle class="dash__pt" cx="348.3" cy="57.9" r="3.2" data-t="16:00" data-v="4.7" aria-label="16:00，负荷 4.7 兆瓦"><title>16:00 · 4.7 MW</title></circle>
+                <circle class="dash__pt" cx="386.3" cy="76.4" r="3.2" data-t="18:00" data-v="4.3" aria-label="18:00，负荷 4.3 兆瓦"><title>18:00 · 4.3 MW</title></circle>
+                <circle class="dash__pt" cx="424.2" cy="99.6" r="3.2" data-t="20:00" data-v="3.8" aria-label="20:00，负荷 3.8 兆瓦"><title>20:00 · 3.8 MW</title></circle>
+                <circle class="dash__pt" cx="462.1" cy="122.9" r="3.2" data-t="22:00" data-v="3.3" aria-label="22:00，负荷 3.3 兆瓦"><title>22:00 · 3.3 MW</title></circle>
+                <circle class="dash__pt" cx="500" cy="127.5" r="3.2" data-t="24:00" data-v="3.2" aria-label="24:00，负荷 3.2 兆瓦"><title>24:00 · 3.2 MW</title></circle>
+                <text class="dash__axis" x="45" y="182" text-anchor="middle">00</text>
+                <text class="dash__axis" x="158.8" y="182" text-anchor="middle">06</text>
+                <text class="dash__axis" x="272.5" y="182" text-anchor="middle">12</text>
+                <text class="dash__axis" x="386.3" y="182" text-anchor="middle">18</text>
+                <text class="dash__axis" x="500" y="182" text-anchor="end">24</text>
+              </svg>
+              <div class="dash__tip" hidden></div>
+              <p class="sr-only" data-dash-live aria-live="polite"></p>
+            </div>
+
+            <div class="dash__lower">
+              <div class="dash__bars" aria-hidden="true">
+                <i style="--h:42%"></i><i style="--h:34%"></i><i style="--h:38%"></i><i style="--h:55%"></i>
+                <i style="--h:62%"></i><i style="--h:58%"></i><i style="--h:71%"></i><i style="--h:88%"></i>
+                <i style="--h:76%"></i><i style="--h:64%"></i><i style="--h:52%"></i><i style="--h:46%"></i>
+              </div>
+              <div class="dash__ring" role="img" aria-label="当日负荷率 72%">
+                <svg viewBox="0 0 86 86" aria-hidden="true">
+                  <circle cx="43" cy="43" r="34" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="6"/>
+                  <circle cx="43" cy="43" r="34" fill="none" stroke="#0E9F75" stroke-width="6" stroke-linecap="round" stroke-dasharray="153.8 213.6"/>
+                </svg>
+                <span class="dash__ring-num">72%<small>LOAD</small></span>
+              </div>
+              <ul class="dash__status">
+                <li><i></i>光伏阵列<span>82%</span></li>
+                <li><i></i>储能 · 充电中<span>64%</span></li>
+                <li><i class="dash__warn"></i>冷站 · 待巡检<span>12:40</span></li>
+                <li><i></i>照明回路<span>96%</span></li>
+              </ul>
+            </div>
+
+            <span class="dash__mark dash__mark--1" aria-hidden="true">01</span>
+            <span class="dash__mark dash__mark--2" aria-hidden="true">02</span>
+            <span class="dash__mark dash__mark--3" aria-hidden="true">03</span>
+
+            <p class="dash__foot">DEMO DATA · 界面为版式示例，数字为演示数据</p>
+          </div>
+        </div>
+        <figcaption class="lt-fig__cap">图 01 · 值班负荷总览（演示数据）</figcaption>
+        <ol class="lt-notes lt-notes--dash">
+          <li><b>01</b> KPI 读数：今日负荷 / 峰值 / 在线设备，只留三个数。</li>
+          <li><b>02</b> 24 小时负荷折线：单条线、单 tab 停靠；方向键逐点，Home / End 跳首尾，Esc 关闭提示。</li>
+          <li><b>03</b> 负荷率环与设备状态：颜色只表示状态，不作装饰。</li>
+        </ol>
+        <details class="lt-details">
+          <summary>附表 01-A · 折线数据（演示）</summary>
+          <table class="lt-table lt-table--mini">
+            <caption class="sr-only">园区 24 小时负荷演示数据</caption>
+            <thead><tr><th scope="col">时间</th><th scope="col">负荷（MW）</th></tr></thead>
+            <tbody>
+              <tr><td>00:00</td><td>3.1</td></tr>
+              <tr><td>02:00</td><td>2.8</td></tr>
+              <tr><td>04:00</td><td>3.4</td></tr>
+              <tr><td>06:00</td><td>4.2</td></tr>
+              <tr><td>08:00</td><td>4.6</td></tr>
+              <tr><td>10:00</td><td>4.1</td></tr>
+              <tr><td>12:00</td><td>4.9</td></tr>
+              <tr><td>14:00</td><td>5.2</td></tr>
+              <tr><td>16:00</td><td>4.7</td></tr>
+              <tr><td>18:00</td><td>4.3</td></tr>
+              <tr><td>20:00</td><td>3.8</td></tr>
+              <tr><td>22:00</td><td>3.3</td></tr>
+              <tr><td>24:00</td><td>3.2</td></tr>
+            </tbody>
+          </table>
+        </details>
+      </figure>
+
+      <section class="lt-sec-head" id="directory">
+        <span class="lt-sec-no">02</span>
+        <div class="lt-sec-body">
+          <h2>本页目录</h2>
+          <p>七行索引；右侧为随滚动高亮的本页目录，窄屏收进顶部的 details。</p>
+        </div>
+      </section>
+
+      <div class="lt-scroll">
+        <table class="lt-table">
+          <caption>表 02 · 本页章节索引（02 行指向紧随本表的图 02）</caption>
+          <thead>
+            <tr><th scope="col">编号</th><th scope="col">章节</th><th scope="col">内容</th><th scope="col">图号 / 表号</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="lt-num">01</td><td>图 01 驾驶舱</td><td>值班负荷总览与键盘读数</td><td class="lt-num">图 01</td></tr>
+            <tr><td class="lt-num">02</td><td>图 02 交付系统</td><td>从问题到验收的五个节点</td><td class="lt-num">图 02</td></tr>
+            <tr><td class="lt-num">03</td><td>服务范围</td><td>四类服务的范围、交付与周期</td><td class="lt-num">表 03</td></tr>
+            <tr><td class="lt-num">04</td><td>案例图版</td><td>潮汐 / 驿站 / 白塔 三张图版</td><td class="lt-num">图 03-A–C</td></tr>
+            <tr><td class="lt-num">05</td><td>五阶段周表</td><td>摸底到交付，11 周甘特</td><td class="lt-num">图 04</td></tr>
+            <tr><td class="lt-num">06</td><td>设计 Token</td><td>色彩、用途与样本</td><td class="lt-num">表 05</td></tr>
+            <tr><td class="lt-num">07</td><td>观点变更记录</td><td>三条工作笔记的版本与日期</td><td class="lt-num">表 06</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <figure class="lt-fig lt-fig--blue" data-reveal>
+        <div class="lt-fig__head">
+          <span class="lt-fig__no">图 02 / LT-01-B</span>
+          <span>流程 · 交付系统</span>
+          <span class="lt-fig__meta">比例 1:1 · 示意</span>
+        </div>
+        <div class="lt-fig__frame">
+          <span class="lt-tick lt-tick--tl" aria-hidden="true"></span>
+          <span class="lt-tick lt-tick--tr" aria-hidden="true"></span>
+          <span class="lt-tick lt-tick--bl" aria-hidden="true"></span>
+          <span class="lt-tick lt-tick--br" aria-hidden="true"></span>
+          <svg viewBox="0 0 680 180" role="img" aria-label="交付流程示意：问题、口径、结构、界面、验收五个节点依次相连。">
+            <defs>
+              <marker id="ltFlowArrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M0 0 L8 4 L0 8 Z" fill="#1F4FE0"/>
+              </marker>
+            </defs>
+            <line x1="130" y1="90" x2="148" y2="90" stroke="#1F4FE0" stroke-width="1.5" marker-end="url(#ltFlowArrow)"/>
+            <line x1="268" y1="90" x2="286" y2="90" stroke="#1F4FE0" stroke-width="1.5" marker-end="url(#ltFlowArrow)"/>
+            <line x1="406" y1="90" x2="424" y2="90" stroke="#1F4FE0" stroke-width="1.5" marker-end="url(#ltFlowArrow)"/>
+            <line x1="544" y1="90" x2="562" y2="90" stroke="#1F4FE0" stroke-width="1.5" marker-end="url(#ltFlowArrow)"/>
+            <rect x="14" y="56" width="112" height="68" rx="2" fill="#1F4FE0"/>
+            <rect x="152" y="56" width="112" height="68" rx="2" fill="#0E9F75"/>
+            <rect x="290" y="56" width="112" height="68" rx="2" fill="#C9841C"/>
+            <rect x="428" y="56" width="112" height="68" rx="2" fill="#C93E27"/>
+            <rect x="566" y="56" width="112" height="68" rx="2" fill="#0A1633"/>
+            <text x="70" y="83" text-anchor="middle" font-family="monospace" font-size="10" fill="#FFFFFF" opacity=".78">01</text>
+            <text x="70" y="107" text-anchor="middle" font-family="monospace" font-size="17" font-weight="650" fill="#FFFFFF">问题</text>
+            <text x="208" y="83" text-anchor="middle" font-family="monospace" font-size="10" fill="#101418" opacity=".72">02</text>
+            <text x="208" y="107" text-anchor="middle" font-family="monospace" font-size="17" font-weight="650" fill="#101418">口径</text>
+            <text x="346" y="83" text-anchor="middle" font-family="monospace" font-size="10" fill="#101418" opacity=".72">03</text>
+            <text x="346" y="107" text-anchor="middle" font-family="monospace" font-size="17" font-weight="650" fill="#101418">结构</text>
+            <text x="484" y="83" text-anchor="middle" font-family="monospace" font-size="10" fill="#FFFFFF" opacity=".78">04</text>
+            <text x="484" y="107" text-anchor="middle" font-family="monospace" font-size="17" font-weight="650" fill="#FFFFFF">界面</text>
+            <text x="622" y="83" text-anchor="middle" font-family="monospace" font-size="10" fill="#FFFFFF" opacity=".78">05</text>
+            <text x="622" y="107" text-anchor="middle" font-family="monospace" font-size="17" font-weight="650" fill="#FFFFFF">验收</text>
+          </svg>
+        </div>
+        <figcaption class="lt-fig__cap">图 02 · 从问题到验收的五个节点（示意）</figcaption>
+      </figure>
+
+      <section class="lt-sec-head" id="services">
+        <span class="lt-sec-no">03</span>
+        <div class="lt-sec-body">
+          <h2>服务范围</h2>
+          <p>四类服务，可单做也可组合。周期是常见区间，不是承诺。</p>
+        </div>
+      </section>
+
+      <p class="lt-p">四类服务可以单做，也可以组合。多数项目从一次界面走查开始：先找出「看错、找不到、不敢改」的具体位置，再决定是做产品 UI、大屏、设计系统，还是只做咨询。每项的范围与验收见<a href="services.html">服务规格页</a>。</p>
+
+      <div class="lt-scroll">
+        <table class="lt-table">
+          <caption>表 03 · 服务规格（摘要）</caption>
+          <thead>
+            <tr><th scope="col">编号</th><th scope="col">服务</th><th scope="col">范围</th><th scope="col">核心交付</th><th scope="col">周期</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="lt-num">01</td>
+              <td><b>B 端产品界面</b><span class="lt-cell-sub">7 人</span></td>
+              <td>后台、工作台、复杂表单与审批流；任务流、信息架构、界面与状态</td>
+              <td>任务流图、页面清单、可点击原型、高保真、状态清单</td>
+              <td class="lt-num">4–8 周</td>
+            </tr>
+            <tr>
+              <td class="lt-num">02</td>
+              <td><b>数据大屏</b><span class="lt-cell-sub">5 人</span></td>
+              <td>指挥中心、展厅、监控大屏；指标梳理、图表选型、信息分层</td>
+              <td>指标清单、图表规范、大屏视觉、数据表兜底</td>
+              <td class="lt-num">3–6 周</td>
+            </tr>
+            <tr>
+              <td class="lt-num">03</td>
+              <td><b>设计系统</b><span class="lt-cell-sub">前端 4 人</span></td>
+              <td>组件、Token、规范与前端映射；多产品线共用一套约束</td>
+              <td>Token 表、组件库、使用规范、前端变量映射、培训</td>
+              <td class="lt-num">6–10 周</td>
+            </tr>
+            <tr>
+              <td class="lt-num">04</td>
+              <td><b>设计咨询</b><span class="lt-cell-sub">2 人</span></td>
+              <td>现状诊断、界面走查、团队方法与评审机制</td>
+              <td>一页问题清单、走查记录、改进路线、工作坊</td>
+              <td class="lt-num">2–4 周</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="lt-sec-head" id="plates">
+        <span class="lt-sec-no">04</span>
+        <div class="lt-sec-body">
+          <h2>案例图版</h2>
+          <p>三张图版，各配图号、图注与设计动作。名称与界面均为虚构版式示例。</p>
+        </div>
+      </section>
+
+      <div class="lt-plate" data-reveal>
+        <span class="lt-plate__no">图 03-A</span>
+        <div class="lt-plate__body">
+          <div>
+            <h3>潮汐</h3>
+            <p class="lt-plate__meta">2025 · 能源 · 园区能源管理平台</p>
+            <p>把 12 类设备、3 套计费口径收进一个总览。首屏只留四个数，其余按「值班员此刻要做什么」分层展开。</p>
+            <ul class="lt-plate__acts">
+              <li>告警按处置动作分级，不按设备类型排</li>
+              <li>首屏只留四个数，其余下沉到详情</li>
+              <li>交接班摘要自动生成，替代口头交接</li>
+            </ul>
+          </div>
+          <figure class="lt-plate__fig">
+            <svg viewBox="0 0 400 240" role="img" aria-label="潮汐平台界面缩略：顶部四个指标块，中部折线与柱状，右侧告警列表。演示界面。">
+              <rect x="14" y="14" width="372" height="212" rx="2" fill="#0A1633" stroke="#22335C"/>
+              <rect x="14" y="14" width="372" height="26" rx="2" fill="#13244A"/>
+              <circle cx="26" cy="27" r="3" fill="#0E9F75"/>
+              <rect x="36" y="24" width="64" height="5" rx="1" fill="#33456F"/>
+              <rect x="26" y="52" width="80" height="34" rx="2" fill="#14264D"/>
+              <rect x="34" y="60" width="28" height="8" rx="1" fill="#1F4FE0"/>
+              <rect x="34" y="74" width="46" height="4" rx="1" fill="#33456F"/>
+              <rect x="114" y="52" width="80" height="34" rx="2" fill="#14264D"/>
+              <rect x="122" y="60" width="22" height="8" rx="1" fill="#0E9F75"/>
+              <rect x="122" y="74" width="40" height="4" rx="1" fill="#33456F"/>
+              <rect x="202" y="52" width="80" height="34" rx="2" fill="#14264D"/>
+              <rect x="210" y="60" width="30" height="8" rx="1" fill="#C4811B"/>
+              <rect x="210" y="74" width="34" height="4" rx="1" fill="#33456F"/>
+              <rect x="290" y="52" width="96" height="34" rx="2" fill="#14264D"/>
+              <rect x="298" y="60" width="18" height="8" rx="1" fill="#1F4FE0"/>
+              <rect x="298" y="74" width="52" height="4" rx="1" fill="#33456F"/>
+              <rect x="26" y="98" width="258" height="112" rx="2" fill="#0C1936" stroke="#22335C"/>
+              <path d="M40 190 L70 176 L100 182 L130 158 L160 164 L190 140 L220 148 L250 124 L272 130" fill="none" stroke="#0E9F75" stroke-width="2"/>
+              <path d="M40 198 L272 198" stroke="#22335C"/>
+              <rect x="40" y="166" width="8" height="32" fill="#1F4FE0" opacity=".55"/>
+              <rect x="64" y="158" width="8" height="40" fill="#1F4FE0" opacity=".55"/>
+              <rect x="88" y="172" width="8" height="26" fill="#1F4FE0" opacity=".55"/>
+              <rect x="112" y="150" width="8" height="48" fill="#1F4FE0" opacity=".55"/>
+              <rect x="136" y="160" width="8" height="38" fill="#1F4FE0" opacity=".55"/>
+              <rect x="160" y="140" width="8" height="58" fill="#1F4FE0" opacity=".55"/>
+              <rect x="184" y="152" width="8" height="46" fill="#1F4FE0" opacity=".55"/>
+              <rect x="208" y="132" width="8" height="66" fill="#1F4FE0" opacity=".55"/>
+              <rect x="232" y="144" width="8" height="54" fill="#1F4FE0" opacity=".55"/>
+              <rect x="292" y="98" width="94" height="112" rx="2" fill="#0C1936" stroke="#22335C"/>
+              <circle cx="304" cy="114" r="3" fill="#C4811B"/>
+              <rect x="312" y="111" width="52" height="5" rx="1" fill="#33456F"/>
+              <circle cx="304" cy="134" r="3" fill="#C4811B"/>
+              <rect x="312" y="131" width="38" height="5" rx="1" fill="#33456F"/>
+              <circle cx="304" cy="154" r="3" fill="#0E9F75"/>
+              <rect x="312" y="151" width="58" height="5" rx="1" fill="#33456F"/>
+              <circle cx="304" cy="174" r="3" fill="#0E9F75"/>
+              <rect x="312" y="171" width="44" height="5" rx="1" fill="#33456F"/>
+              <rect x="26" y="218" width="140" height="3" rx="1" fill="#22335C"/>
+            </svg>
+            <figcaption>图 03-A · 潮汐 / 值班总览（版式示例）</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="lt-plate" data-reveal>
+        <span class="lt-plate__no">图 03-B</span>
+        <div class="lt-plate__body">
+          <div>
+            <h3>驿站</h3>
+            <p class="lt-plate__meta">2024 · 交通 · 城市交通调度大屏</p>
+            <p>把「看」和「调」分开：左屏看全局态势，右屏只做一件事——把最近的可用资源派到事件点。颜色只用来表示状态，不用来装饰。</p>
+            <ul class="lt-plate__acts">
+              <li>事件按影响范围分级，颜色只表示状态</li>
+              <li>事件详情旁直接给资源半径与到达时间</li>
+              <li>低光模式按值班室照度调，不用纯黑</li>
+            </ul>
+          </div>
+          <figure class="lt-plate__fig">
+            <svg viewBox="0 0 400 240" role="img" aria-label="驿站大屏界面缩略：左侧路网与事件点，右侧调度面板。演示界面。">
+              <rect x="14" y="14" width="372" height="212" rx="2" fill="#0A1633" stroke="#22335C"/>
+              <rect x="14" y="14" width="372" height="26" rx="2" fill="#13244A"/>
+              <rect x="26" y="24" width="58" height="5" rx="1" fill="#33456F"/>
+              <rect x="300" y="22" width="74" height="11" rx="1" fill="#1F4FE0" opacity=".8"/>
+              <rect x="26" y="52" width="226" height="158" rx="2" fill="#0B1732" stroke="#22335C"/>
+              <path d="M40 80 L120 80 L120 140 L210 140 M70 60 L70 190 M150 60 L150 190 M200 60 L200 120" stroke="#263A66" stroke-width="4"/>
+              <path d="M40 170 L100 120 L160 150 L230 96" fill="none" stroke="#1F4FE0" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <circle cx="100" cy="120" r="5" fill="#C4811B"/>
+              <circle cx="160" cy="150" r="5" fill="#C4811B"/>
+              <circle cx="230" cy="96" r="5" fill="#0E9F75"/>
+              <circle cx="70" cy="80" r="3" fill="#1F4FE0"/>
+              <circle cx="150" cy="180" r="3" fill="#1F4FE0"/>
+              <rect x="266" y="52" width="120" height="158" rx="2" fill="#0C1936" stroke="#22335C"/>
+              <rect x="276" y="62" width="64" height="5" rx="1" fill="#33456F"/>
+              <rect x="276" y="78" width="100" height="30" rx="1" fill="#14264D"/>
+              <rect x="284" y="85" width="36" height="4" rx="1" fill="#5A6C93"/>
+              <rect x="284" y="94" width="58" height="7" rx="1" fill="#C4811B"/>
+              <rect x="276" y="116" width="100" height="30" rx="1" fill="#14264D"/>
+              <rect x="284" y="123" width="36" height="4" rx="1" fill="#5A6C93"/>
+              <rect x="284" y="132" width="46" height="7" rx="1" fill="#0E9F75"/>
+              <rect x="276" y="154" width="100" height="30" rx="1" fill="#14264D"/>
+              <rect x="284" y="161" width="36" height="4" rx="1" fill="#5A6C93"/>
+              <rect x="284" y="170" width="52" height="7" rx="1" fill="#1F4FE0"/>
+              <rect x="276" y="192" width="56" height="10" rx="1" fill="#1F4FE0"/>
+            </svg>
+            <figcaption>图 03-B · 驿站 / 调度大屏（版式示例）</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="lt-plate" data-reveal>
+        <span class="lt-plate__no">图 03-C</span>
+        <div class="lt-plate__body">
+          <div>
+            <h3>白塔</h3>
+            <p class="lt-plate__meta">2023 · 医疗 · 医院运营驾驶舱</p>
+            <p>门诊、住院、手术、质控四块口径先对齐，再谈可视化。院长看到的每一张图，都能追到明细表的同一行。</p>
+            <ul class="lt-plate__acts">
+              <li>先开口径工作坊，确认分子分母与统计时段</li>
+              <li>每个汇总数都有一条可下钻到明细的路径</li>
+              <li>异常值单独标注，不做平滑处理</li>
+            </ul>
+          </div>
+          <figure class="lt-plate__fig">
+            <svg viewBox="0 0 400 240" role="img" aria-label="白塔驾驶舱界面缩略：左侧环形与柱状，右侧指标明细。演示界面。">
+              <rect x="14" y="14" width="372" height="212" rx="2" fill="#0A1633" stroke="#22335C"/>
+              <rect x="14" y="14" width="372" height="26" rx="2" fill="#13244A"/>
+              <rect x="26" y="24" width="70" height="5" rx="1" fill="#33456F"/>
+              <rect x="26" y="52" width="168" height="112" rx="2" fill="#0C1936" stroke="#22335C"/>
+              <circle cx="76" cy="108" r="30" fill="none" stroke="#22335C" stroke-width="8"/>
+              <circle cx="76" cy="108" r="30" fill="none" stroke="#1F4FE0" stroke-width="8" stroke-dasharray="132 188" transform="rotate(-90 76 108)"/>
+              <rect x="128" y="76" width="52" height="6" rx="1" fill="#33456F"/>
+              <rect x="128" y="90" width="38" height="6" rx="1" fill="#33456F"/>
+              <rect x="128" y="110" width="48" height="6" rx="1" fill="#33456F"/>
+              <rect x="128" y="124" width="30" height="6" rx="1" fill="#33456F"/>
+              <rect x="26" y="172" width="168" height="38" rx="2" fill="#0C1936" stroke="#22335C"/>
+              <rect x="36" y="190" width="10" height="14" fill="#1F4FE0"/>
+              <rect x="52" y="182" width="10" height="22" fill="#1F4FE0"/>
+              <rect x="68" y="186" width="10" height="18" fill="#1F4FE0"/>
+              <rect x="84" y="176" width="10" height="28" fill="#0E9F75"/>
+              <rect x="100" y="184" width="10" height="20" fill="#1F4FE0"/>
+              <rect x="116" y="180" width="10" height="24" fill="#1F4FE0"/>
+              <rect x="132" y="188" width="10" height="16" fill="#1F4FE0"/>
+              <rect x="206" y="52" width="180" height="158" rx="2" fill="#0C1936" stroke="#22335C"/>
+              <rect x="216" y="62" width="52" height="5" rx="1" fill="#33456F"/>
+              <rect x="216" y="78" width="160" height="1" fill="#22335C"/>
+              <rect x="216" y="88" width="70" height="5" rx="1" fill="#5A6C93"/>
+              <rect x="330" y="88" width="40" height="5" rx="1" fill="#0E9F75"/>
+              <rect x="216" y="104" width="86" height="5" rx="1" fill="#5A6C93"/>
+              <rect x="330" y="104" width="34" height="5" rx="1" fill="#0E9F75"/>
+              <rect x="216" y="120" width="62" height="5" rx="1" fill="#5A6C93"/>
+              <rect x="330" y="120" width="44" height="5" rx="1" fill="#C4811B"/>
+              <rect x="216" y="136" width="78" height="5" rx="1" fill="#5A6C93"/>
+              <rect x="330" y="136" width="30" height="5" rx="1" fill="#0E9F75"/>
+              <rect x="216" y="152" width="56" height="5" rx="1" fill="#5A6C93"/>
+              <rect x="330" y="152" width="38" height="5" rx="1" fill="#0E9F75"/>
+              <rect x="216" y="168" width="82" height="5" rx="1" fill="#5A6C93"/>
+              <rect x="330" y="168" width="42" height="5" rx="1" fill="#C4811B"/>
+              <rect x="216" y="184" width="64" height="5" rx="1" fill="#5A6C93"/>
+              <rect x="330" y="184" width="36" height="5" rx="1" fill="#0E9F75"/>
+            </svg>
+            <figcaption>图 03-C · 白塔 / 运营驾驶舱（版式示例）</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <p class="lt-note">以上案例名称、系统与界面均为虚构版式示例；数字为演示数据，不对应任何真实客户。完整六例见<a href="cases.html">案例页</a>。</p>
+
+      <section class="lt-sec-head" id="schedule">
+        <span class="lt-sec-no">05</span>
+        <div class="lt-sec-body">
+          <h2>图 04 · 五阶段周表</h2>
+          <p>以 11 周项目为例。条纹格表示未占用；实际排期在摸底后确认。</p>
+        </div>
+      </section>
+
+      <div class="lt-scroll lt-plate lt-plate--navy">
+        <table class="lt-gantt">
+          <caption>图 04 · 五阶段 × 11 周甘特（不含客户侧评审与数据准备）</caption>
+          <thead>
+            <tr>
+              <th scope="col">阶段</th>
+              <th scope="col">W1</th><th scope="col">W2</th><th scope="col">W3</th><th scope="col">W4</th>
+              <th scope="col">W5</th><th scope="col">W6</th><th scope="col">W7</th><th scope="col">W8</th>
+              <th scope="col">W9</th><th scope="col">W10</th><th scope="col">W11</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01 摸底</td>
+              <td colspan="2"><span class="lt-bar lt-bar--blue" aria-hidden="true"></span><span class="sr-only">第 1–2 周</span></td>
+              <td class="lt-gantt__empty" colspan="9"></td>
+            </tr>
+            <tr>
+              <td>02 结构</td>
+              <td class="lt-gantt__empty" colspan="2"></td>
+              <td colspan="2"><span class="lt-bar lt-bar--mint" aria-hidden="true"></span><span class="sr-only">第 3–4 周</span></td>
+              <td class="lt-gantt__empty" colspan="7"></td>
+            </tr>
+            <tr>
+              <td>03 视觉</td>
+              <td class="lt-gantt__empty" colspan="4"></td>
+              <td colspan="4"><span class="lt-bar lt-bar--amber" aria-hidden="true"></span><span class="sr-only">第 5–8 周</span></td>
+              <td class="lt-gantt__empty" colspan="3"></td>
+            </tr>
+            <tr>
+              <td>04 联调</td>
+              <td class="lt-gantt__empty" colspan="8"></td>
+              <td colspan="2"><span class="lt-bar lt-bar--violet" aria-hidden="true"></span><span class="sr-only">第 9–10 周</span></td>
+              <td class="lt-gantt__empty" colspan="1"></td>
+            </tr>
+            <tr>
+              <td>05 交付</td>
+              <td class="lt-gantt__empty" colspan="10"></td>
+              <td colspan="1"><span class="lt-bar lt-bar--coral" aria-hidden="true"></span><span class="sr-only">第 11 周</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="lt-note">总计约 8–11 周。若客户侧评审每次拖过 5 个工作日，整体会顺延；这是最常见也最容易被低估的延期原因。详见<a href="process.html">流程页</a>。</p>
+
+      <section class="lt-sec-head" id="tokens">
+        <span class="lt-sec-no">06</span>
+        <div class="lt-sec-body">
+          <h2>表 05 · 设计 Token</h2>
+          <p>下面十二格是界面主色板；纸白、两级描边、三个同色浅底与深蓝二级由主色派生，不单列。深蓝图版内部另用一套经校验的图表色（表 05-A），不用于整页底色或正文。</p>
+        </div>
+      </section>
+
+      <div class="lt-colorstrip" aria-label="设计 Token 色板">
+        <div class="lt-colorstrip__chip lt-colorstrip__chip--paper" style="background:#F7F8FA"><b>--lt-paper</b><span>#F7F8FA</span></div>
+        <div class="lt-colorstrip__chip" style="background:#F1F4F8"><b>--lt-paper-3</b><span>#F1F4F8</span></div>
+        <div class="lt-colorstrip__chip lt-colorstrip__chip--dark" style="background:#101418"><b>--lt-ink</b><span>#101418</span></div>
+        <div class="lt-colorstrip__chip lt-colorstrip__chip--dark" style="background:#1F4FE0"><b>--lt-blue</b><span>#1F4FE0</span></div>
+        <div class="lt-colorstrip__chip" style="background:#E9EFFF"><b>--lt-blue-tint</b><span>#E9EFFF</span></div>
+        <div class="lt-colorstrip__chip lt-colorstrip__chip--dark" style="background:#5A6472"><b>--lt-graphite</b><span>#5A6472</span></div>
+        <div class="lt-colorstrip__chip" style="background:#0E9F75"><b>--lt-mint</b><span>#0E9F75</span></div>
+        <div class="lt-colorstrip__chip" style="background:#C9841C"><b>--lt-amber</b><span>#C9841C</span></div>
+        <div class="lt-colorstrip__chip lt-colorstrip__chip--dark" style="background:#C93E27"><b>--lt-coral</b><span>#C93E27</span></div>
+        <div class="lt-colorstrip__chip lt-colorstrip__chip--dark" style="background:#8E55B8"><b>--lt-violet</b><span>#8E55B8</span></div>
+        <div class="lt-colorstrip__chip lt-colorstrip__chip--dark" style="background:#C0392B"><b>--lt-danger</b><span>#C0392B</span></div>
+        <div class="lt-colorstrip__chip lt-colorstrip__chip--dark" style="background:#0A1633"><b>--lt-navy</b><span>#0A1633</span></div>
+      </div>
+
+      <div class="lt-scroll">
+        <table class="lt-table lt-table--token">
+          <caption>表 05 · 色彩 Token 与用途</caption>
+          <thead>
+            <tr><th scope="col">Token</th><th scope="col">值</th><th scope="col">用途</th><th scope="col">样本</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="lt-num">--lt-paper</td><td class="lt-num">#F7F8FA</td><td>页面底色</td><td><span class="lt-swatch" style="--sw:#F7F8FA"></span></td></tr>
+            <tr><td class="lt-num">--lt-paper-3</td><td class="lt-num">#F1F4F8</td><td>图注底、次级底色</td><td><span class="lt-swatch" style="--sw:#F1F4F8"></span></td></tr>
+            <tr><td class="lt-num">--lt-ink</td><td class="lt-num">#101418</td><td>正文、规则线、当前项</td><td><span class="lt-swatch" style="--sw:#101418"></span></td></tr>
+            <tr><td class="lt-num">--lt-blue</td><td class="lt-num">#1F4FE0</td><td>链接、图号、进度线</td><td><span class="lt-swatch" style="--sw:#1F4FE0"></span></td></tr>
+            <tr><td class="lt-num">--lt-blue-tint</td><td class="lt-num">#E9EFFF</td><td>表头底、图头底</td><td><span class="lt-swatch" style="--sw:#E9EFFF"></span></td></tr>
+            <tr><td class="lt-num">--lt-graphite</td><td class="lt-num">#5A6472</td><td>次级文字与表头</td><td><span class="lt-swatch" style="--sw:#5A6472"></span></td></tr>
+            <tr><td class="lt-num">--lt-mint</td><td class="lt-num">#0E9F75</td><td>数据线、正常状态</td><td><span class="lt-swatch" style="--sw:#0E9F75"></span></td></tr>
+            <tr><td class="lt-num">--lt-amber</td><td class="lt-num">#C9841C</td><td>图内标注、待巡检</td><td><span class="lt-swatch" style="--sw:#C9841C"></span></td></tr>
+            <tr><td class="lt-num">--lt-coral</td><td class="lt-num">#C93E27</td><td>状态强调、分类色</td><td><span class="lt-swatch" style="--sw:#C93E27"></span></td></tr>
+            <tr><td class="lt-num">--lt-violet</td><td class="lt-num">#8E55B8</td><td>图内分类（甘特第 4 类）</td><td><span class="lt-swatch" style="--sw:#8E55B8"></span></td></tr>
+            <tr><td class="lt-num">--lt-danger</td><td class="lt-num">#C0392B</td><td>表单错误、危险状态</td><td><span class="lt-swatch" style="--sw:#C0392B"></span></td></tr>
+            <tr><td class="lt-num">--lt-navy</td><td class="lt-num">#0A1633</td><td>图 01 与图版背景</td><td><span class="lt-swatch" style="--sw:#0A1633"></span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="lt-note">表 05-A 只列深蓝图版内部使用的颜色。它们与界面主色板分开校验，不能拿来当整页底色或正文颜色。</p>
+      <div class="lt-scroll">
+        <table class="lt-table lt-table--mini">
+          <caption>表 05-A · 深蓝图版专用色（仅用于图 01、图 04 与图版内部）</caption>
+          <thead><tr><th scope="col">用途</th><th scope="col">值</th><th scope="col">说明</th></tr></thead>
+          <tbody>
+            <tr><td>图版蓝</td><td class="lt-num">#4F73E8</td><td>主数据线与主分类</td></tr>
+            <tr><td>图版薄荷</td><td class="lt-num">#1FA97E</td><td>正常状态、第二条数据线</td></tr>
+            <tr><td>图版琥珀</td><td class="lt-num">#C4811B</td><td>警示、待处理</td></tr>
+            <tr><td>图版紫</td><td class="lt-num">#8E55B8</td><td>第四类任务，与界面紫同值</td></tr>
+            <tr><td>图版珊瑚</td><td class="lt-num">#D4523C</td><td>第五类任务与超期标记</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="lt-sec-head" id="notes">
+        <span class="lt-sec-no">07</span>
+        <div class="lt-sec-body">
+          <h2>表 06 · 观点变更记录</h2>
+          <p>三篇工作笔记，按版本倒序。完整正文见<a href="insights.html">观点页</a>。</p>
+        </div>
+      </section>
+
+      <div class="lt-scroll">
+        <table class="lt-table">
+          <caption>表 06 · 文档变更记录</caption>
+          <thead>
+            <tr><th scope="col">版本</th><th scope="col">日期</th><th scope="col">条目</th><th scope="col">类型</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="lt-num">v2.4.3</td><td class="lt-num">2026.08</td><td><a href="insights.html#post-1">大屏不是把报表放大</a></td><td>工作笔记</td></tr>
+            <tr><td class="lt-num">v2.4.2</td><td class="lt-num">2026.05</td><td><a href="insights.html#post-2">设计系统先解决命名</a></td><td>工作笔记</td></tr>
+            <tr><td class="lt-num">v2.4.1</td><td class="lt-num">2026.02</td><td><a href="insights.html#post-3">联调阶段才发现的 5 个界面问题</a></td><td>工作笔记</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <aside class="lt-toc" aria-label="本页目录">
+      <p class="lt-toc__title">本页目录</p>
+      <ol>
+        <li><a href="#figure-01" class="is-current" aria-current="true"><span class="lt-toc__no">01</span>图 01 驾驶舱</a></li>
+        <li><a href="#directory"><span class="lt-toc__no">02</span>本页目录表</a></li>
+        <li><a href="#services"><span class="lt-toc__no">03</span>服务规格</a></li>
+        <li><a href="#plates"><span class="lt-toc__no">04</span>案例图版</a></li>
+        <li><a href="#schedule"><span class="lt-toc__no">05</span>五阶段周表</a></li>
+        <li><a href="#tokens"><span class="lt-toc__no">06</span>设计 Token</a></li>
+        <li><a href="#notes"><span class="lt-toc__no">07</span>观点变更记录</a></li>
+      </ol>
+      <p class="lt-toc__note">LT-01 / v2.4<br>更新 2026-11-05</p>
+    </aside>
+
+  </div>
+</div>
+</main>
+
+<footer class="lt-colophon">
+  <div class="lt-colophon__in">
+    <p class="lt-colophon__row">
+      <span><b>LANTU / 澜图设计</b> · v2.4</span>
+      <span>更新 2026-11-05</span>
+      <span>字体 PingFang SC / 系统等宽</span>
+      <span>色板 12 色 + 深蓝图版 5 色 · 首页表 05/05-A</span>
+    </p>
+    <p class="lt-colophon__row">
+      <span><a href="contact.html">hello@example.com</a> · 000-0000-0000</span>
+      <span>© <span data-year>2026</span> 澜图设计</span>
+      <span class="lt-colophon__demo">样板间演示站：品牌、人物、案例与界面均为虚构，仅用于展示版式；界面数字为演示数据，联系方式为占位符。</span>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
